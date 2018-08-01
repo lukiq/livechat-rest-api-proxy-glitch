@@ -5,5 +5,9 @@ It makes use of [Express.js](http://expressjs.com/), a minimal and flexible Node
 
 ### With curl
 curl "https://livechat-rest-api.glitch.me/agents" -H "Authorization: Bearer <your_access_token>" -H X-API-Version:2
+curl "https://livechat-rest-api.glitch.me/agents" -H "Authorization:Basic <_your_token_>" -H X-API-Version:2
+
+_your_token_ - btoa(LIVECHAT_LOGIN + ':' + API_KEY) - https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/btoa
+
 
 Keep this project open and view 'Logs' to see the console output.
